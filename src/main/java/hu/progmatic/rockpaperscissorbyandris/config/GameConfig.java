@@ -8,12 +8,17 @@ import java.util.Random;
 
 @Configuration
 public class GameConfig {
-    @Bean
+   /* @Bean
     public Game gameBean(String computerChoice){
         return new Game(computerChoice);
-    }
+    }*/
 
     @Bean
+    public Game gameBean(){
+        return new Game();
+    }
+
+  /* @Bean
     public String choiceBean(){
         switch (new Random().nextInt(3)){
             case 0 -> {return "rock";}
@@ -21,5 +26,5 @@ public class GameConfig {
             default -> {return "scissor";}
         }
 
-    }
+    }*/
 }

@@ -5,8 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+<p> Computer choice: </p>
 <h1 th:text="${game.getComputerChoice()}"></h1>
+<p> Player choice: </p>
 <h1 th:text="${game.getPlayerChoice()}"></h1>
+<p> The winner is: </p>
+<h1 th:text="${game.getWinner()}"></h1>
 <a th:href="@{/home}">
 <button type="submit">OK</button>
 </a>

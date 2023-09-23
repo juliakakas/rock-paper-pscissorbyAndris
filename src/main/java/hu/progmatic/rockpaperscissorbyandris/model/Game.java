@@ -3,10 +3,13 @@ package hu.progmatic.rockpaperscissorbyandris.model;
 public class Game {
     private String playerChoice;
     private String computerChoice;
+    private String winner;
 
-    public Game (String computerChoice){
+    public Game(){}
+
+    /*public Game (String computerChoice){
         this.computerChoice = computerChoice;
-    }
+    }*/
 
     public String getPlayerChoice() {
         return playerChoice;
@@ -22,5 +25,13 @@ public class Game {
 
     public void setComputerChoice(String computerChoice) {
         this.computerChoice = computerChoice;
+    }
+
+    public String getWinner() {
+        return winner;
+    }
+
+    public void setWinner(String winner) {
+        this.winner = winner;
     }
 }
